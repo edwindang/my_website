@@ -11,9 +11,9 @@ const Hero = (props) => (
         I'm Edwin!
       </SectionTitle>
       <SectionText>
-        Technical Product Manager | Software Developer | Critical Thinker
+        Technical Product Manager | Software Developer | Problem Solver
       </SectionText>
-      <Button onClick={() => window.open("https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:baa9054c-70ec-44d7-a09d-cf126c363ed7", "_blank")}>
+      <Button onClick={() => window.open("https://drive.google.com/file/d/1FflAinl4u3fIUHJ5Ocx2NzacOq8KAKMt/view?usp=drive_link", "_blank")}>
         Resume
       </Button>
     </LeftSection>

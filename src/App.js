@@ -18,9 +18,9 @@ function App() {
           <Hero />
           <BgAnimation />
         </Section>
+        <Timeline />
         <Projects />
         <Technologies />
-        <Timeline />
         <Acomplishments />
       </Layout>
     </Theme>

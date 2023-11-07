@@ -25,7 +25,7 @@ const Projects = () => (
     <SectionDivider />
       <SectionTitle main>Projects</SectionTitle>
     <GridContainer>
-      {projects.map(({id, image, title, description, tags, source}) => (
+      {projects.map(({id, image, title, description, tags, source, publication}) => (
         <BlogCard key={id}>
           <Img src={image} />
           <TitleContent>
@@ -43,6 +43,9 @@ const Projects = () => (
           </div>
           <UtilityList>
             <ExternalLinks onClick={() => window.open(source, "_blank")}>Source Code</ExternalLinks>
+          {publication && (
+            <ExternalLinks onClick={() => window.open(publication, "_blank")}>Publication</ExternalLinks>
+          )}
           </UtilityList>
         </BlogCard>
       ))}
