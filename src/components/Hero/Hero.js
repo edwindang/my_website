@@ -11,9 +11,9 @@ const Hero = (props) => (
         I am Edwin Dang
       </SectionTitle>
       <SectionText>
-        I'm an aspiring software engineer with a background in data analytics and healthcare technology.
+        I'm a Technical Product Manager with a background in software development and data analytics. Welcome to my Portfolio!
       </SectionText>
-      <Button onClick={() => window.open("https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:baa9054c-70ec-44d7-a09d-cf126c363ed7", "_blank")}>
+      <Button onClick={() => window.open("https://drive.google.com/file/d/1f7iP3ilOA4T0YdQu2n3fhJTCqrbtu1i7/view?usp=sharing", "_blank")}>
         Resume
       </Button>
     </LeftSection>
