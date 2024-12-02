@@ -23,29 +23,39 @@ import { projects } from "../../constants/constants";
 const Projects = () => (
   <Section nopadding id="projects">
     <SectionDivider />
-      <SectionTitle main>Projects</SectionTitle>
+    <SectionTitle main>Projects</SectionTitle>
     <GridContainer>
-      {projects.map(({id, image, title, description, tags, source}) => (
-        <BlogCard key={id}>
-          <Img src={image} />
-          <TitleContent>
-            <HeaderThree title>{title}</HeaderThree>
+      {projects.map(
+        ({ id, image, title, description, tags, source, visit }) => (
+          <BlogCard key={id}>
+            <Img src={image} />
+            <TitleContent>
+              <HeaderThree title>{title}</HeaderThree>
+              <Hr />
+            </TitleContent>
+            <CardInfo>{description}</CardInfo>
+            <div>
             <Hr />
-          </TitleContent>
-          <CardInfo>{description}</CardInfo>
-          <div>
-            <TitleContent>Stack</TitleContent>
-            <TagList>
-              {tags.map((tag, i) => (
-              <Tag key={i}>{tag}</Tag>
-              ))}
-            </TagList>
-          </div>
-          <UtilityList>
-            <ExternalLinks onClick={() => window.open(source, "_blank")}>Source Code</ExternalLinks>
-          </UtilityList>
-        </BlogCard>
-      ))}
+              <TitleContent>Tech Stack</TitleContent>
+              <TagList>
+                {tags.map((tag, i) => (
+                  <Tag key={i}>{tag}</Tag>
+                ))}
+              </TagList>
+            </div>
+            <UtilityList>
+              {id === 0 ? (
+                <ExternalLinks onClick={() => window.open(visit, "_blank")}>
+                  Take me there!
+                </ExternalLinks>
+              ) : null}
+              <ExternalLinks onClick={() => window.open(source, "_blank")}>
+                Source Code
+              </ExternalLinks>
+            </UtilityList>
+          </BlogCard>
+        )
+      )}
     </GridContainer>
   </Section>
 );

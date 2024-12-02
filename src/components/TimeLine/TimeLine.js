@@ -48,13 +48,12 @@ const Timeline = () => {
         About Me
       </SectionTitle>
       <SectionText>
-      My name is Edwin Dang and I am an aspiring software engineer who is passionate about healthcare technology and software solutions. 
-      I am currently a senior at the University of Rochester, where I study Computer Science and Neuroscience. I've worked 
-      extensively with human healthcare data as a medical scribe, a clinical volunteer, and a data analyst for a stroke rehabilitation lab at the 
-      University of Rochester Medical Center. I often work as a bridge between clinical and technology teams, which requires me 
-      to have excellent communication skills, a voracious appetite to contribute and learn, as well as a genuine passion for everything that I do.
-      My diverse background has given me the opportunity to bring interpersonal skills into a technical world and tackle both human and technical 
-      components of problem solving.
+      Hi! I'm Edwin Dang, a Technical Product Manager with a passion for creating impactful data-driven solutions and innovative applications. With a strong background 
+      in computer science, artificial intelligence, and behavioral science, I pring a unique perspecctive to product development. Currently at Optum, I lead cross-functional 
+      teams to deliver cutting-edge enhancements to healthcare payments and security platforms, generating millions in revenue while improving operational efficiency. 
+      My experiese spans product management, full stack engineering, and data science. I've a proven track record of optimizing workflows, launching scalable applications, and 
+      collaborating across teams to drive measurable results. Outside of work, I enjoy exploring creative technology projects, like TrackTap, a collaborative music sharing 
+      app I co-founded. Welcome to my portfolio - let's build something extraordinary together.
       </SectionText>
     </Section>
   
