@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 22.11.0
+          node-version: 20.x
 
       - name: Install Dependencies
         run: npm install
@@ -28,4 +28,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out  #index.html is in this folder, and not build
+          publish_branch: gh-pages
+          publish_dir: ./build #wherever index.html is
