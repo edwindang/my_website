@@ -21,16 +21,16 @@ import {
 import { projects } from "../../constants/constants";
 
 const Projects = () => (
-  <Section nopadding id="projects">
+  <Section $nopadding id="projects">
     <SectionDivider />
-    <SectionTitle main>Projects</SectionTitle>
+    <SectionTitle $main>Projects</SectionTitle>
     <GridContainer>
       {projects.map(
         ({ id, image, title, description, tags, source, visit }) => (
           <BlogCard key={id}>
             <Img src={image} />
             <TitleContent>
-              <HeaderThree title>{title}</HeaderThree>
+              <HeaderThree $title>{title}</HeaderThree>
               <Hr />
             </TitleContent>
             <CardInfo>{description}</CardInfo>
@@ -45,11 +45,23 @@ const Projects = () => (
             </div>
             <UtilityList>
               {id === 0 ? (
-                <ExternalLinks onClick={() => window.open(visit, "_blank")}>
+                <ExternalLinks 
+                  onClick={() => {
+                    if (typeof window!=="undefined") {
+                      window.open(visit, "_blank");
+                    }
+                  }}
+                >
                   Take me there!
                 </ExternalLinks>
               ) : null}
-              <ExternalLinks onClick={() => window.open(source, "_blank")}>
+              <ExternalLinks
+                onClick = {() => {
+                  if (typeof window!="undefined") {
+                    window.open(source, "_blank");
+                  }
+                }}
+              >
                 Source Code
               </ExternalLinks>
             </UtilityList>

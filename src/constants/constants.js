@@ -4,9 +4,9 @@ export const projects = [
     description:
       "Built a web application that allows groups to collaboratively control a shared music playlist, enabling users to upvote \
     and downvote songs in the queue for a dynamic, crowd-driven listening experience.",
-    image: "/images/_tracktap.jpg",
+    image: "/images/tracktap.jpeg",
     tags: ["JavaScript", "Python", "C++", "HTML", "CSS"],
-    source: "https://github.com/18sheimanr/TrackTap",
+    source: "https://github.com/edwindang/TrackTap",
     visit: "https://tracktap.app/home",
     id: 0,
   },
@@ -40,11 +40,22 @@ export const projects = [
     description:
       "Built a program (Python) with Pandas and SciPy to quantify compensatory chest movement by analyzing gyroscopic data collected from healthy \
     and affected subjects doing stroke rehabilitation functional. Presented results at a poster conference for the American Society of Neurorehabilitation (ASNR).",
-    image: "/images/210301-occupationaltherapy-stock.jpg",
+    image: "/images/210301-occupationaltherapy-stock.jpeg",
     tags: ["Python", "Pandas", "SciPy", "Numpy", "MatPlotLib"],
     source: "https://github.com/edwindang/compensatory_movements",
     visit: "https://google.com",
     id: 3,
+  },
+  {
+    title:
+      "this.website",
+    description:
+      "My personal portfolio website made with React",
+    image: "/images/website.jpeg",
+    tags: ["React", "CSS", "HTML", "GitHub Actions"],
+    source: "https://github.com/edwindang/my_website",
+    visit: "https://edwindang.github.io/my_website/",
+    id: 4,
   },
   /*
   {
@@ -63,9 +74,6 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: "Started my journey" },
-  { year: 2018, text: "Worked as a freelance developer" },
-  { year: 2019, text: "Founded JavaScript Mastery" },
-  { year: 2020, text: "Shared my projects with the world" },
-  { year: 2021, text: "Started my own platform" },
+  { year: 2022, text: "Worked a Software Developer" },
+  { year: 2023, text: "Worked as a Technical Product Manager" },
 ];

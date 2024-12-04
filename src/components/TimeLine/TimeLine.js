@@ -43,7 +43,7 @@ const Timeline = () => {
   // }, []);
 
   return (
-    <Section nopadding id="about">
+    <Section $nopadding id="about">
       <SectionTitle>
         About Me
       </SectionTitle>
