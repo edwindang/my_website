@@ -52,7 +52,7 @@ export const projects = [
     description:
       "My personal portfolio website made with React",
     image: "/images/website.jpeg",
-    tags: ["React", "CSS", "HTML", "GitHub Actions"],
+    tags: ["Next.js", "CSS", "HTML", "GitHub Actions"],
     source: "https://github.com/edwindang/my_website",
     visit: "https://edwindang.github.io/my_website/",
     id: 4,

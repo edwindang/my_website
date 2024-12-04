@@ -28,4 +28,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build  # Adjust if your build output is in a different folder
+          publish_dir: ./out  #index.html is in this folder, and not build
