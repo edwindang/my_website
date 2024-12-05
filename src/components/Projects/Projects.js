@@ -45,23 +45,17 @@ const Projects = () => (
             </div>
             <UtilityList>
               {id === 0 ? (
-                <ExternalLinks 
-                  onClick={() => {
-                    if (typeof window!=="undefined") {
-                      window.open(visit, "_blank");
-                    }
-                  }}
-                >
+                <ExternalLinks
+    onClick={() => {
+        if (typeof window !== "undefined") {
+            window.open(visit, "_blank");
+        }
+    }}
+>
                   Take me there!
                 </ExternalLinks>
               ) : null}
-              <ExternalLinks
-                onClick = {() => {
-                  if (typeof window!="undefined") {
-                    window.open(source, "_blank");
-                  }
-                }}
-              >
+              <ExternalLinks onClick={() => window.open(source, "_blank")}>
                 Source Code
               </ExternalLinks>
             </UtilityList>
