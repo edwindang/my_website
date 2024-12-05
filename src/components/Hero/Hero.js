@@ -13,7 +13,9 @@ const Hero = (props) => (
       <SectionText>
         I'm a Technical Product Manager with a background in software development and data analytics. Welcome to my Portfolio!
       </SectionText>
-      <Button onClick={() => window.open("https://drive.google.com/file/d/146mXIHJp15fVl_m0EPE9E68z3vWQ9vSA/view?usp=sharing", "_blank")}>
+      <Button onClick={() => {
+        console.log("Button clicked, Resume");
+        window.open("https://drive.google.com/file/d/146mXIHJp15fVl_m0EPE9E68z3vWQ9vSA/view?usp=sharing", "_blank")}}>
         Resume
       </Button>
     </LeftSection>

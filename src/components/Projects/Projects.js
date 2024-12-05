@@ -48,6 +48,7 @@ const Projects = () => (
                 <ExternalLinks
     onClick={() => {
         if (typeof window !== "undefined") {
+          console.log("ExternalLinks clicked in undefined check, Take me there!");
             window.open(visit, "_blank");
         }
     }}
@@ -55,7 +56,11 @@ const Projects = () => (
                   Take me there!
                 </ExternalLinks>
               ) : null}
-              <ExternalLinks onClick={() => window.open(source, "_blank")}>
+              <ExternalLinks onClick={() => {
+              console.log("ExternalLinks clicked, Source Code");
+              window.open(source, "_blank")}
+              }
+              >
                 Source Code
               </ExternalLinks>
             </UtilityList>
